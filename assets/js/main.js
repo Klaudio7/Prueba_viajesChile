@@ -4,13 +4,24 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 $(document).ready(function () {
 
-    let iconoCambiar1 = $("#icono1")
-    let iconoCambiar2 = $("#icono2")
-    let iconoCambiar3 = $("#icono3")
+    let iconoCambiar1 = $("i")
+
+
+    iconoCambiar1.click(function () {
+        // // console.log(this)
+        // $(this).hide()
+
+        $(this).css({
+            "color": "white", "background-color": "blue"
+
+        })
+    })
 
 
 
-    iconoCambiar1.addClass("bg-info")
+
+
+
 
 
 
